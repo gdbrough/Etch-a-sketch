@@ -5,14 +5,14 @@ window.addEventListener("DOMContentLoaded", function(){
 
   canvas.addEventListener("click", function(){
     context.clearRect(0, 0, context.canvas.width, context.canvas.height);
-    coords = [event.layerX - 75, event.layerY -75];
+    coords = [event.layerX - 95, event.layerY -95];
     context.beginPath();
     context.moveTo(coords[0], coords[1]);
     return coords;
   });
 
 
-  document.addEventListener("keyup", function(event){
+  document.addEventListener("keydown", function(event){
     const keyName = event.key;
     switch (event.key){
       case "ArrowRight":
